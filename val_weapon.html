@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Weapons</title>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .weapon .des {
+            display:block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            opacity: 0; /* Start with opacity 0 (hidden) */
+            transition: opacity 0.75s ease; /* Add a transition effect */
+        }
+        .weapon:hover .des {
+            display:block;
+            opacity: 1; /* Change opacity to 1 (visible) on hover */
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background:linear-gradient(0deg,rgb(38, 38, 38), rgb(235, 93, 93));;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+  background-color: #000000;
+  font-size: 60px;
+  padding: 10px 10px;
+  color: rgb(255, 255, 255);
+  text-align: center; 
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top:0;
+  transition: 0.2s;
+}
+
+        .container  {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #272727;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+
+        .weapon {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 40px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .weapon h2 {
+            color: #333;
+        }
+
+        .weapon img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .weapon p {
+            margin: 10px 0;
+        }
+           
+    </style>
+</head>
+<body>
+        <div id="header">Valorant Weapons</div>
+    <div class="container">
+        
+        <div class="weapon">
+            <h2>Vandal</h2>
+            <img src="Vandal.webp" alt="Vandal">
+            <p class="des">The Vandal is the other half of the primary rifle choice, equally priced at 2900 Creds. It is slower than the Phantom — 9.75 rounds per second as opposed to 11 rounds per second — and has fewer bullets per magazine (25 instead of 30). It has the same effects aiming down sights, giving you a 10% less fire rate but a more manageable spread and recoil.</p>
+        </div>
+
+        <div class="weapon">
+            <h2>Operator</h2>
+            <img src="Operator.webp" alt="Operator">
+            <p class="des">The Operator is both the most expensive and the most powerful weapon in the game. It costs 4700 Creds, but makes up for it in its ability to kill an enemy in one hit at any distance. To balance the Operator, it has a slow 0.6 rounds/second firing rate, takes 3.7 seconds to reload, and is tied for the slowest movement speed in the game at 5.13 meters per second.</p>           
+        </div>
+        <div class="weapon">
+            <h2>Phantom</h2>
+            <img src="Phantom.webp" alt="Phantom">
+            <p class="des">The Phantom is one of the two main automatic rifles in the game, the other being the Vandal. Both are 2900 Creds. The Phantom boasts a higher rate of fire and magazine size than its competitor, alongside a silencer for better smoke-spamming. Aiming down sights decreases its fire rate by 10%, but reduces spread and recoil.</p>
+        </div>
+    
+        <div class="weapon">
+            <h2>Odin</h2>
+            <img src="Odin.webp" alt="Odin">
+            <p class="des">The Odin is the better, more expensive Machine Gun, priced at 3200 Creds. Its strong wallbang capabilities, fast rate of fire, and high damage output means it is a very strong Defensive weapon. Sustained fire over its 100 bullet magazine sees its fire rate speed up from 12 to 15.6 rounds per second. The downside is its reload speed — the longest in the game at 5 seconds.</p>
+        </div>
+        <div class="weapon">
+            <h2>Sheriff</h2>
+            <img src="Sheriff.webp" alt="Sheriff">
+            <p class="des">The Sheriff is an 800 Creds semi-automatic hand-cannon. It is the most expensive Sidearm given its ability to one-shot kill armored opponents with a headshot. The Sheriff rewards precision but punishes inaccuracy given its high recoil and slow fire rate of 4 shots per second.</p>
+        </div>
+        <div class="weapon">
+            <h2>Judge</h2>
+            <img src="Judge.webp" alt="Judge">
+            <p class="des">The Judge is a rapid-firing automatic Shotgun that is highly effective at handling multiple targets in close range. As with all shotguns, it is most effective within 10 meters and becomes increasingly inefficient past 15 meters. Its price of 1850 Creds is justified by its 3.5 rounds of 12 pellets per second, with a magazine size of 7.</p>
+        </div>
+
+    </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            document.getElementById("header").style.fontSize = "30px";
+          } else {
+            document.getElementById("header").style.fontSize = "60px";
+          }
+        }
+        </script>
+</body>
+</html>
